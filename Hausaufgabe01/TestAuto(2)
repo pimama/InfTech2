@@ -1,0 +1,14 @@
+
+public class TestAuto {
+
+	public static void main(String[] args) {
+		Auto a =new Auto(0);
+		for(int i=0; i<15 ;i++){
+			a.beschleunigen(5);
+			System.out.println("Geschwindigkeit " + a.getGeschwindigkeit()); 
+		}
+
+	}
+
+	
+}
