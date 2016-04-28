@@ -1,0 +1,22 @@
+
+public class Auto implements Transportmittel {
+	
+	private double geschwindigkeit;
+	
+	public Auto(double geschwindigkeit){
+		if(Math.abs(geschwindigkeit) <= 50){
+			this.geschwindigkeit=geschwindigkeit;
+		}
+		else{this.geschwindigkeit= 0;}
+	}
+	
+	public double getGeschwindigkeit(){
+		return geschwindigkeit;}
+	
+	public void beschleunigen(double geschwindigkeit) {
+		if(geschwindigkeit + this.geschwindigkeit > 50) {
+			System.out.println("Das Auto darf nicht schneller als 50 km/h fahren");}
+		else {this.geschwindigkeit= this.geschwindigkeit + geschwindigkeit;}	
+		}
+
+	}
